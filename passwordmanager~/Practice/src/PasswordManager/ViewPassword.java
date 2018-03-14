@@ -86,7 +86,7 @@ public class ViewPassword extends javax.swing.JFrame {
     private void viewPassword() throws Exception{
         String url = "jdbc:mysql://localhost:3306/sample";
         String user = "root";
-        String pass = "accessgranted1";
+        String pass = "enter_mysql_password_here"; // enter your mysql password here
         String query = "select * from passwordmanager";
         String getUser, getPass;
 
