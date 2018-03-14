@@ -148,9 +148,9 @@ public class LoginForm extends javax.swing.JFrame {
     
     private void onLoginClick(String username, String password) throws Exception{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        String url = "jdbc:mysql://localhost:3306/sample";
-        String user = "root";
-        String pass = "accessgranted1";
+        String url = "jdbc:mysql://localhost:3306/sample"; //Default url for local database!
+        String user = "root"; // Enter username of mysql server. Default username is "root"!
+        String pass = "mysql_server_password_here";  // Enter your mysql server password here!
         String query = "select * from final_login";
         Connection con = DriverManager.getConnection(url, user, pass);
         Statement st = con.createStatement();
